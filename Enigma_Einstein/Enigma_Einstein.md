@@ -340,11 +340,11 @@ Esse cenário me lembra o caso do canadense Allan Brooks. Ele acreditava que tin
 
 ## Conclusões
 
-Os diferentes resultados obtidos mostram os avanços que cada empresa vêm implementando para entregarem resultados mais assertivos. Em um ambiente controlado, relativamente simples e que já se sabe as repostas corretas é fácil identificar erros, respostas incompletas ou que parecem ser verdadeiras, mas, sem nenhum fundamento científico. Mas, a realidade do dia a dia das IAs genertivas é bem mais desafiante que o Enigma de Einstein.
+Os diferentes resultados obtidos mostram os avanços que cada empresa vêm implementando para entregarem resultados mais assertivos. Em um ambiente controlado, relativamente simples e que já se sabe as repostas corretas é fácil identificar erros, respostas incompletas ou que parecem ser verdadeiras, mas, sem nenhum fundamento científico. Mas, a realidade do dia a dia das IAs generativas é bem mais desafiante que o Enigma de Einstein.
 
-É inegável os benefícios advindos do uso das mais diversas ferramentas de IA que vâm surgindo e que continuarão a aparecer, mas, na mesma proporção surgem os mais diversos desafios inerentes a própria tecnologia e devemos estar preparados para os aspectos positivos e negativos das IAs.
+É inegável os benefícios advindos do uso das mais diversas ferramentas de IA que vêm surgindo e que continuarão a aparecer, mas, na mesma proporção surgem os mais diversos desafios inerentes a própria tecnologia e devemos estar preparados para os aspectos positivos e negativos das IAs.
 
-Esse teste não é nenhum estudo acadêmico (e não foi esse o objetivo), é uma simples curiosidade. Então se testar várias vezes e em ferramentas diferentes, dá pra confiar que as IAs generativas conseguem resolver o Enigma de Einstein.
+Esse teste não é nenhum estudo acadêmico (e não foi esse o objetivo), é uma simples curiosidade. Como também poderia ser utilizado técnicas mais avançadas de engenharia de prompt. Mas, se você testar várias vezes e em ferramentas diferentes, dá pra confiar que as IAs generativas conseguem resolver o Enigma de Einstein.
 
 
 <br>
