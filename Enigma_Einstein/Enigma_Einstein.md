@@ -8,7 +8,7 @@ Foi aí que eu pensei em usar um chat de IA generativa para um teste de lógica 
 
 Diz a lenda que esse teste foi elaborado pelo próprio Albert Einstein e somente 2% da população consegue resolvê-lo.  Embora não exista nenhuma prova sobre a autoria do puzzle e nenhuma estudo acadêmico conhecido sobre o percentual da população mundial capaz de resolver o puzzle, o mesmo, é bem interessante e pode “queimar” alguns neurônios de que tentar resolvê-lo.
 
-Para que tiver curiosidade, o puzzle pode ser encontrado em sites como Racha Cuca.
+Para quem tiver curiosidade, o puzzle pode ser encontrado em sites como Racha Cuca.
 
 Inicialmente utilizei o Mistral e Gemini para ver como se saiam como o teste.
 O prompt inicial foi o seguinte:
@@ -85,7 +85,7 @@ Detalhe a lógica utilizada para chegar a conclusão da sua resposta
 
 Olhando agora, ficou claro que o prompt pode ser melhorado, mas, mesmo com esse prompt a resposta espera seria algo como:
 
-```
+```response
 O dono do peixe é alemão, mora na casa 4 que é verde, bebe café e fuma Prince.
 ```
 
@@ -114,21 +114,21 @@ Embora não tenha solicitado no prompt inicial, as duas ferramentas apresentaram
 
 Na primeira tentativa o Gemini apresentou a seguinte resposta
 
-```
+```response
 Quem é o dono do peixe? O dono do peixe é o Alemão.
 Quais as outras características do dono do peixe? O dono do peixe (o Alemão) mora na:
 
-•	Casa: 5
-•	Cor: Branca
-•	Bebida: Cerveja
-•	Cigarro: Prince
+•   Casa: 5
+•   Cor: Branca
+•   Bebida: Cerveja
+•   Cigarro: Prince
 ```
 
 Embora tenha acertado que o dono do peixe seja alemão, essa resposta violam as regras 5 e 13 do puzzle (vide prompt inicial acima)
 
 Após informar ao chat do Gemini, a violação das regras 5 e 13, obtive a seguinte resposta:
 
-```
+```response
 Não há solução para a sua lista de dicas que satisfaça todas as 15 regras simultaneamente, devido ao conflito que você identificou. No entanto, a solução mais próxima (que satisfaz 13 das 15 regras e é aceita em versões com leves ajustes) é que o Dinamarquês é o dono do peixe.
 
 Vou responder com a solução mais logicamente defensável (a última tabela):
@@ -160,20 +160,20 @@ Refaça análise, por favor
 
 A resposta obtida foi:
 
-```
+```response
 Esta é a única tabela que satisfaz todas as regras de vizinhança e atribuição, forçando a seguinte conclusão:
 1.	Quem é o dono do peixe? O dono do peixe é o Alemão.
 2.	Quais as outras características do dono do peixe?
-o	Casa: 5
-o	Cor: Branca
-o	Bebida: Cerveja
-o	Cigarro: Bluemaster
+o   Casa: 5
+o   Cor: Branca
+o   Bebida: Cerveja
+o   Cigarro: Bluemaster
 ```
 
 
-Informei ao chat que a reposta fornecida violava a regra 5 e o chat continuava a insistir que a lista de dicas (regras) estava incorreta. E mesmo fornecendo outras dicas, as respostas continuava apontando que as regras iniciais estavam incorretas
+Informei ao chat que a reposta fornecida violava a regra 5 e o chat continuava a insistir que a lista de dicas (regras) estava incorreta. E mesmo fornecendo outras dicas, as respostas continuava apontando que as regras iniciais estavam incorretas. Segue um dos retornos do chat.
 
-```
+```response
 Sua lista de dicas, tal como apresentada, contém uma contradição lógica insuperável se todas as duplas obrigatórias (D3, D5, D13) e as vizinhanças (D11, D14) forem estritamente seguidas...
 ```
 
@@ -199,7 +199,7 @@ Como o Mistral não tinha conseguido a reposta correta mesmo utilizando o mesmo 
 
 Chama atenção a abordagem diferente em que as duas ferramentas lhe davam com as falhas. Enquanto o Gemini informava que existiam falhas lógicas nas 15 regras iniciais o Mistral, simplesmente continuava a dar respostas erradas inclusive violando a mesma regra como se fosse corretas.
 
-Mas, nenhuma da duas adimitiam que "eles" não sabiam a reposta correta.
+Mas, nenhuma da duas admitiam que "eles" não sabiam a reposta correta.
 
 <br>
 
@@ -237,7 +237,7 @@ Já essas três ferramentas, forneceram a reposta correta com prompt inicial, ma
 
 ### Quase de primeira
 
-* chat Z.ai 
+* Z.ai (modelo GLM-4.6)
 
 Errou na primeira tentativa, violando a regra 11, mas, acertou na segunda tentativa quando informei ao mesmo sobre a violação e também apresentou uma tabela completa da solução.
 
@@ -288,23 +288,23 @@ Quando a execução do código Python falhou o próprio chat gerou outro código
 
 Essa nova execução não sou gerou a reposta correta como a tabela completa da solução e ainda fez uma análise de complexidade.
 
-```
+```response
 🔬 ANÁLISE DA COMPLEXIDADE
 Espaço de Busca
-•	Permutações possíveis: 5! × 5! × 5! × 5! × 5! = 24.883.200.000 combinações
-•	Solução única: Apenas 1 combinação satisfaz todas as restrições
-•	Probabilidade aleatória: 1 em 24 bilhões
+• Permutações possíveis: 5! × 5! × 5! × 5! × 5! = 24.883.200.000 combinações
+• Solução única: Apenas 1 combinação satisfaz todas as restrições
+• Probabilidade aleatória: 1 em 24 bilhões
 Estratégia de Resolução
-1.	Dedução Lógica Sequencial: Aplicar restrições em ordem estratégica
-2.	Propagação de Restrições: Cada dedução limita as possibilidades seguintes
-3.	Eliminação por Contradição: Descartar configurações impossíveis
-4.	Verificação Completa: Confirmar que todas as 15 regras são satisfeitas
+1. Dedução Lógica Sequencial: Aplicar restrições em ordem estratégica
+2. Propagação de Restrições: Cada dedução limita as possibilidades seguintes
+3. Eliminação por Contradição: Descartar configurações impossíveis
+4. Verificação Completa: Confirmar que todas as 15 regras são satisfeitas
 
 📚 Curiosidades
-•	Este enigma é atribuído a Albert Einstein, que supostamente o criou quando criança
-•	Diz-se que Einstein afirmou que apenas 2% da população mundial consegue resolver este enigma
-•	É um exemplo clássico de Problema de Satisfação de Restrições (CSP) usado em Inteligência Artificial
-•	A solução requer raciocínio lógico puro, sem necessidade de conhecimento especializado
+• Este enigma é atribuído a Albert Einstein, que supostamente o criou quando criança
+• Diz-se que Einstein afirmou que apenas 2% da população mundial consegue resolver este enigma
+• É um exemplo clássico de Problema de Satisfação de Restrições (CSP) usado em Inteligência Artificial
+• A solução requer raciocínio lógico puro, sem necessidade de conhecimento especializado
 ________________________________________
 Documento gerado por SciSpace Research Agent
 Data: 2025-11-05
@@ -320,7 +320,7 @@ Bom, eu não sei dizer sobre os outros 8 bilhões de habitantes do nosso planeta
 
 Mas, esse que vos escreve, já tinha solucionado o puzzle no passado. Embora não lembrasse da solução quando fiz os testes com os chats já tinha uma noção de como resolver.
 
-Na primeira tentativa eu errei ao seguir uma lógica muito usada para resolver sudoku, mas, que não cabe aqui. Com isso, acabei colocando o sueco na casa 4, quando deveria ser na casa 5 e no final não consegui satisfazer a regra 3 que diz que “O dinamarquês toma chá”.
+Na primeira tentativa eu errei ao seguir uma lógica muito usada para resolver Sudoku, mas, que não cabe aqui. Com isso, acabei colocando o sueco na casa 4, quando deveria ser na casa 5 e no final não consegui satisfazer a regra 3 que diz que “O dinamarquês toma chá”.
 
 Já na segunda tentativa, comecei a identificar as regras implícitas existente ao cruzar as regras iniciais e as regras implícitas que iam surgindo a medida que o puzzle ia sendo resolvido e consegui chegar à resposta correta.
 
