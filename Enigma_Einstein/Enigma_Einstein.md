@@ -83,13 +83,13 @@ Responda:
 Detalhe a lógica utilizada para chegar a conclusão da sua resposta
 ```
 
-Olhando agora, ficou claro que o prompt pode ser melhorado, mas, mesmo com esse prompt a resposta espera seria algo como:
+Olhando agora, ficou claro que o prompt pode ser melhorado, mas, mesmo com esse prompt a resposta esperada seria algo como:
 
 ```response
 O dono do peixe é alemão, mora na casa 4 que é verde, bebe café e fuma Prince.
 ```
 
-A resposta completa do puzzle é a seguinte:
+E a solução completa do puzzle é a seguinte:
 
 
 | Casa        | 1 🟨       | 2 🟦       | 3 🟥       | 4 🟩       | 5 ⬜       |
@@ -110,21 +110,21 @@ Embora não tenha solicitado no prompt inicial, as duas ferramentas apresentaram
 
 <br>
 
-### Gemini (modelo 2.5-flash)
+### Gemini
 
-Na primeira tentativa o Gemini apresentou a seguinte resposta
+No Gemini foi utilizado o modelo modelo 2.5-flash. Na primeira tentativa o Gemini apresentou a seguinte resposta:
 
 ```response
 Quem é o dono do peixe? O dono do peixe é o Alemão.
-Quais as outras características do dono do peixe? O dono do peixe (o Alemão) mora na:
 
+Quais as outras características do dono do peixe? O dono do peixe (o Alemão) mora na:
 •   Casa: 5
 •   Cor: Branca
 •   Bebida: Cerveja
 •   Cigarro: Prince
 ```
 
-Embora tenha acertado que o dono do peixe seja alemão, essa resposta violam as regras 5 e 13 do puzzle (vide prompt inicial acima)
+Embora tenha acertado que o dono do peixe seja alemão, essa resposta violam as regras 5 e 13 do puzzle (vide prompt inicial acima).
 
 Após informar ao chat do Gemini, a violação das regras 5 e 13, obtive a seguinte resposta:
 
@@ -135,9 +135,9 @@ Vou responder com a solução mais logicamente defensável (a última tabela):
 ...
 ```
 
-Aqui já fica claro que o prompt inicial pode ser melhorado para informar explicitamente que a solução deve satisfazer as 15 regras iniciais
+Aqui já fica claro que o prompt inicial pode ser melhorado para informar explicitamente que a solução deve satisfazer as 15 regras iniciais.
 
-Outro ponto é que o dono do peixe é a última das características a ser definida ao seguir uma lógica para resolver o puzzle, mas, dá forma como foi escrito o prompt, ficou implícito que o chat deve resolver todo o puzzle. Ao invés de perguntar somente pelo dono do peixe, seria melhor solicitar uma solução completa do puzzle.
+Outro ponto é que o dono do peixe é a última das características a ser definida ao seguir uma lógica para resolver o puzzle, mas, dá forma como foi escrito o prompt, ficou implícito que o chat deve resolver todo o puzzle. Ao invés de perguntar somente pelo dono do peixe, talvez, seria melhor solicitar uma solução completa do puzzle.
 
 Informei ao chat que a resposta acima violava a regra 15 e dei uma dica sobre algumas abordagens a serem seguidas com o seguinte prompt:
 
@@ -183,9 +183,9 @@ Para acessar chat completo do Gemini, [clique aqui](./Gemini_2.5-flash.md)
 
 <br>
 
-### Mistral (sem informação do modelo utilizado)
+### Mistral
 
-Na primeira resposta o chat não conseguiu identificar qual é o cigarro da casa 5. Além disso, a solução parcial apresentada violava as regras 5 e 13.
+O Mistral não informal qual modelo está sendo utilizado. Na primeira resposta o chat não conseguiu identificar qual é o cigarro da casa 5. Além disso, a solução parcial apresentada violava as regras 5 e 13.
 
 Ao informar essas violações ao chat, foi retornado uma resposta completa, mas, que dessa vez violava as regras 13, 11 e 14, e a resposta seguinte violava a regra 13.
 
@@ -205,7 +205,7 @@ Mas, nenhuma da duas admitiam que "eles" não sabiam a reposta correta.
 
 ## E as outras ferramentas de IAs generativas?
 
-Como tive grande dificuldade para obter a resposta correta com os dois chats citados, resolvi testar com outras ferramentas até para entender o quanto a qualidade do prompt pode ter dificultado o trabalho do Gemini e do Mistral e para minha surpresa, outras ferramentas com o mesmo propósito tiveram melhor desempenho, inclusive acertado de primeira.
+Como tive dificuldade para obter a resposta correta com os dois chats citados, resolvi testar com outras ferramentas até para entender o quanto a qualidade do prompt pode ter dificultado o trabalho do Gemini e do Mistral e para minha surpresa, outras ferramentas com o mesmo propósito tiveram melhor desempenho, inclusive acertado de primeira.
 
 <br>
 
@@ -247,7 +247,7 @@ Errou na primeira tentativa, violando a regra 11, mas, acertou na segunda tentat
 
 * Meta.ai (sem informação do modelo utilizado)
 
-A grande decepção foi a Meta.ai, após duas tentativas, o chat nem chegou a concluir a análise e simplesmente parou de escrever no chat.
+A grande decepção foi a Meta.ai, após duas tentativas, o chat nem chegou a concluir a análise e simplesmente travou e parou de escrever no chat.
 
 * Perplexity (sem informação do modelo utilizado)
 
@@ -326,10 +326,26 @@ Já na segunda tentativa, comecei a identificar as regras implícitas existente 
 
 <br>
 
+## Dá pra confiar cegamente nas IAs?
+
+Já nas primeiras versões de chats generativos baseados em LLM, especialistas em IA nos alertavam sobre os erros nas repostas geradas por essas ferramentas, e principalmente respostas que envolvem raciocínio lógico. E mesmo os LRMs (evolução do LLM para raciocínio lógico) parece ter suas limitações.
+
+Embora esse puzzle não seja algo de grande complexidade os resultados falhos de algumas ferramentas confirmam o alerta dos especialitas sobre a dificuldade de IAs generativas gerarem texto que dependem de lógica formal e rigorosa.
+
+Chama a atenção e preocupa a forma elegante com que as IAs generativas erram. As etapas intermediárias parecem mostrar um rigor lógico/ matemático impressionante  mesmo cometendo erros simples.
+
+Esse cenário me lembra o caso do canadense Allan Brooks. Ele acreditava que tinha descoberto uma nova teoria matemática revolucionária com o ChatGPT. Como ninguém deu muita bola, ele ficou paranoico e começou a se afastar de todo mundo, até que ele teve a ideia de testar a teoria em outra ferramenta de IA que logo de cara apresentou os erros da nova "teoria matemática". Ele inclusive fundou uma ONG, The Human Line Project, para lhe dar com questões de saúde mental relacionada com uso de IAs.
+
+<br>
+
 ## Conclusões
 
-Já nas primeiras versões de chats generativos baseados em LLM, nos foi apresentado as restrições em utilizar esse tipo de ferramenta para lógica complexa.
-Embora esse puzzle não seja algo de grande complexidade os resultados falhos de algumas ferramentas confirmam a ideia inicial sobre a dificuldade de gerar texto que dependem de lógica formal e rigorosa. 
+Os diferentes resultados obtidos mostram os avanços que cada empresa vêm implementando para entregarem resultados mais assertivos. Em um ambiente controlado, relativamente simples e que já se sabe as repostas corretas é fácil identificar erros, respostas incompletas ou que parecem ser verdadeiras, mas, sem nenhum fundamento científico. Mas, a realidade do dia a dia das IAs genertivas é bem mais desafiante que o Enigma de Einstein.
+
+É inegável os benefícios advindos do uso das mais diversas ferramentas de IA que vâm surgindo e que continuarão a aparecer, mas, na mesma proporção surgem os mais diversos desafios inerentes a própria tecnologia e devemos estar preparados para os aspectos positivos e negativos das IAs.
+
+Esse teste não é nenhum estudo acadêmico (e não foi esse o objetivo), é uma simples curiosidade. Então se testar várias vezes e em ferramentas diferentes, dá pra confiar que as IAs generativas conseguem resolver o Enigma de Einstein.
+
 
 <br>
 
@@ -337,37 +353,23 @@ Embora esse puzzle não seja algo de grande complexidade os resultados falhos de
 ### Ferramentas utilizadas:
 
 * https://gemini.google.com/
-
 * https://chat.mistral.ai/
-
 * https://chatgpt.com
-
 * https://claude.ai/
-
 * https://chat.qwen.ai/
-
 * https://grok.com/
-
 * https://chat.maritaca.ai/
-
 * https://copilot.microsoft.com/chats
-
 * https://chat.deepseek.com/
-
 * https://chat.z.ai/
-
 * https://www.meta.ai/
-
 * https://www.perplexity.ai/
-
 * https://scispace.com/
-
 * https://aistudio.google.com/app/prompts/new_chat
-
 * https://notebooklm.google.com/
 
 
-### Fazendo o Teste de Einstein:
+### Para fazer o Teste de Einstein:
 
 * https://rachacuca.com.br/logica/problemas/teste-de-einstein/
 
@@ -375,6 +377,11 @@ Embora esse puzzle não seja algo de grande complexidade os resultados falhos de
 
 * https://www.bbc.com/portuguese/articles/c72gdnynvdvo
 * https://super.abril.com.br/ideias/charada-atribuida-a-einsten-da-no-no-cerebro-e-vira-hit-na-web/
+* https://blog.dsacademy.com.br/o-que-sao-large-language-models-llms/
+* https://blog.dsacademy.com.br/llms-e-a-evolucao-da-ia-generativa/
+* https://macmagazine.com.br/post/2025/06/09/estudo-da-apple-explora-limitacoes-dos-grandes-modelos-de-raciocinio-de-ia/
+* https://www.infomoney.com.br/mundo/chats-de-ia-podem-entrar-em-uma-espiral-de-delirio-e-isso-esta-afetando-as-pessoas/
+* https://thehumanlineproject.org/
 
 
 ---
