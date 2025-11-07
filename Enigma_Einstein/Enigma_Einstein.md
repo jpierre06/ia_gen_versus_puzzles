@@ -322,7 +322,7 @@ Mas, esse que vos escreve, já tinha solucionado o puzzle no passado. Embora nã
 
 Na primeira tentativa eu errei ao seguir uma lógica muito usada para resolver Sudoku, mas, que não cabe aqui. Com isso, acabei colocando o sueco na casa 4, quando deveria ser na casa 5 e no final não consegui satisfazer a regra 3 que diz que “O dinamarquês toma chá”.
 
-Já na segunda tentativa, comecei a identificar as regras implícitas existente ao cruzar as regras iniciais e as regras implícitas que iam surgindo a medida que o puzzle ia sendo resolvido e consegui chegar à resposta correta.
+Já na segunda tentativa, comecei a identificar as regras implícitas existente ao cruzar as regras iniciais e as regras implícitas que iam surgindo a medida que o puzzle ia sendo resolvido e consegui chegar à [resposta correta](./Humano.md).
 
 <br>
 
