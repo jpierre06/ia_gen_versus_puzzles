@@ -213,7 +213,7 @@ Como tive dificuldade para obter a resposta correta com os dois chats citados, r
 
 * ChatGPT (sem informação do modelo utilizado)
 
-* Claude.ia (modelo Sonnet 4.5)
+* [Claude.ia](./Claude.md) (modelo Sonnet 4.5)
 
 * Qwen (modelo Qwen3-Max)
 
@@ -322,7 +322,7 @@ Mas, esse que vos escreve, já tinha solucionado o puzzle no passado. Embora nã
 
 Na primeira tentativa eu errei ao seguir uma lógica muito usada para resolver Sudoku, mas, que não cabe aqui. Com isso, acabei colocando o sueco na casa 4, quando deveria ser na casa 5 e no final não consegui satisfazer a regra 3 que diz que “O dinamarquês toma chá”.
 
-Já na segunda tentativa, comecei a identificar as regras implícitas existente ao cruzar as regras iniciais e as regras implícitas que iam surgindo a medida que o puzzle ia sendo resolvido e consegui chegar à resposta correta.
+Já na segunda tentativa, comecei a identificar as regras implícitas existente ao cruzar as regras iniciais e as regras implícitas que iam surgindo a medida que o puzzle ia sendo resolvido e consegui chegar à [resposta correta](./Humano.md).
 
 <br>
 
@@ -330,7 +330,7 @@ Já na segunda tentativa, comecei a identificar as regras implícitas existente 
 
 Já nas primeiras versões de chats generativos baseados em LLM, especialistas em IA nos alertavam sobre os erros nas repostas geradas por essas ferramentas, e principalmente respostas que envolvem raciocínio lógico. E mesmo os LRMs (evolução do LLM para raciocínio lógico) parece ter suas limitações.
 
-Embora esse puzzle não seja algo de grande complexidade os resultados falhos de algumas ferramentas confirmam o alerta dos especialitas sobre a dificuldade de IAs generativas gerarem texto que dependem de lógica formal e rigorosa.
+Embora esse puzzle não seja algo de grande complexidade os resultados falhos de algumas ferramentas confirmam o alerta dos especialistas sobre a dificuldade de IAs generativas gerarem texto que dependem de lógica formal e rigorosa.
 
 Chama a atenção e preocupa a forma elegante com que as IAs generativas erram. As etapas intermediárias parecem mostrar um rigor lógico/ matemático impressionante  mesmo cometendo erros simples.
 
@@ -340,11 +340,11 @@ Esse cenário me lembra o caso do canadense Allan Brooks. Ele acreditava que tin
 
 ## Conclusões
 
-Os diferentes resultados obtidos mostram os avanços que cada empresa vêm implementando para entregarem resultados mais assertivos. Em um ambiente controlado, relativamente simples e que já se sabe as repostas corretas é fácil identificar erros, respostas incompletas ou que parecem ser verdadeiras, mas, sem nenhum fundamento científico. Mas, a realidade do dia a dia das IAs genertivas é bem mais desafiante que o Enigma de Einstein.
+Os diferentes resultados obtidos mostram os avanços que cada empresa vêm implementando para entregarem resultados mais assertivos. Em um ambiente controlado, relativamente simples e que já se sabe as repostas corretas é fácil identificar erros, respostas incompletas ou que parecem ser verdadeiras, mas, sem nenhum fundamento científico. Mas, a realidade do dia a dia das IAs generativas é bem mais desafiante que o Enigma de Einstein.
 
-É inegável os benefícios advindos do uso das mais diversas ferramentas de IA que vâm surgindo e que continuarão a aparecer, mas, na mesma proporção surgem os mais diversos desafios inerentes a própria tecnologia e devemos estar preparados para os aspectos positivos e negativos das IAs.
+É inegável os benefícios advindos do uso das mais diversas ferramentas de IA que vêm surgindo e que continuarão a aparecer, mas, na mesma proporção surgem os mais diversos desafios inerentes a própria tecnologia e devemos estar preparados para os aspectos positivos e negativos das IAs.
 
-Esse teste não é nenhum estudo acadêmico (e não foi esse o objetivo), é uma simples curiosidade. Então se testar várias vezes e em ferramentas diferentes, dá pra confiar que as IAs generativas conseguem resolver o Enigma de Einstein.
+Esse teste não é nenhum estudo acadêmico (e não foi esse o objetivo), é uma simples curiosidade. Como também poderia ser utilizado técnicas mais avançadas de engenharia de prompt. Mas, se você testar várias vezes e em ferramentas diferentes, dá pra confiar que as IAs generativas conseguem resolver o Enigma de Einstein.
 
 
 <br>

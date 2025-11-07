@@ -12,6 +12,7 @@ Para mais detalhes, [clique aqui](./Enigma_Einstein/Enigma_Einstein.md)
 
 - `Enigma_Einstein/` — Análises e notas sobre o "Teste de Einstein". Contém descrições das tentativas e observações sobre o comportamento de diferentes modelos.
     - `ChatGPT.md` — (reservado para export de uma sessão com o modelo ChatGPT).
+    - `Claude.md` — Export de uma sessão com o modelo Claude.ai.
     - `Enigma_Einstein.md` — Texto com descrição, resultados e conclusões.
     - `Gemini_2.5-flash.md` — Export de uma sessão com o modelo Gemini (ex.: tentativa detalhada e saídas).
     - `NotebookLM/` - Diretório com prompt usado pelo NotebookLM.
