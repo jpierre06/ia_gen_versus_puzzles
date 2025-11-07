@@ -213,7 +213,7 @@ Como tive dificuldade para obter a resposta correta com os dois chats citados, r
 
 * ChatGPT (sem informação do modelo utilizado)
 
-* Claude.ia (modelo Sonnet 4.5)
+* [Claude.ia](./Claude.md) (modelo Sonnet 4.5)
 
 * Qwen (modelo Qwen3-Max)
 
