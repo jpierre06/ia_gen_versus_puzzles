@@ -1,6 +1,6 @@
-# Solução do Enigma de Einsten
+# Solução do Enigma de Einstein
 
-Segue minha solução para o Enigma de Einsten seguindo apenas racíocinio lógico
+Segue minha solução para o Enigma de Einstein seguindo apenas racíocinio lógico
 
 <br>
 

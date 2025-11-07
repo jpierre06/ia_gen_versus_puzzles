@@ -330,7 +330,7 @@ Já na segunda tentativa, comecei a identificar as regras implícitas existente 
 
 Já nas primeiras versões de chats generativos baseados em LLM, especialistas em IA nos alertavam sobre os erros nas repostas geradas por essas ferramentas, e principalmente respostas que envolvem raciocínio lógico. E mesmo os LRMs (evolução do LLM para raciocínio lógico) parece ter suas limitações.
 
-Embora esse puzzle não seja algo de grande complexidade os resultados falhos de algumas ferramentas confirmam o alerta dos especialitas sobre a dificuldade de IAs generativas gerarem texto que dependem de lógica formal e rigorosa.
+Embora esse puzzle não seja algo de grande complexidade os resultados falhos de algumas ferramentas confirmam o alerta dos especialistas sobre a dificuldade de IAs generativas gerarem texto que dependem de lógica formal e rigorosa.
 
 Chama a atenção e preocupa a forma elegante com que as IAs generativas erram. As etapas intermediárias parecem mostrar um rigor lógico/ matemático impressionante  mesmo cometendo erros simples.
 
